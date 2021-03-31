@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hosungclass">
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.hosungclass.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.hosungclass.NumberGameActivity" />
+        <activity android:name="com.example.hosungclass.DiceActivity" />
+        <activity android:name="com.example.hosungclass.RaceActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.example.hosungclass.MoleActivity" />
+        <activity android:name="com.example.hosungclass.CardGameActivity" />
+        <activity android:name="com.example.hosungclass.CardGameMenuActivity" />
+        <activity android:name="com.example.hosungclass.NumberBaseBallActivity" />
+        <activity android:name="com.example.hosungclass.CookActivity" />
+        <activity android:name="com.example.hosungclass.ClockActivity" />
+        <activity android:name="com.example.hosungclass.TimerActivity" />
+        <activity android:name="com.example.hosungclass.LottoActivity" />
+        <activity android:name="com.example.hosungclass.StopWatchActivity" />
+        <activity android:name="com.example.hosungclass.DrawingExamActivity" />
+        <activity android:name="com.example.hosungclass.PuzzleActivity" />
+        <activity android:name="com.example.hosungclass.PaintActivity" />
+        <activity android:name="com.example.hosungclass.ShapeActivity" />
+        <activity android:name="com.example.hosungclass.MultiplicationTableActivity" />
+        <activity android:name="com.example.hosungclass.MatrixActivity" />
+        <activity android:name="com.example.hosungclass.SpeedNumberActivity" />
+        
+        </application>
+
+</manifest>
