@@ -15,11 +15,11 @@ public class CookActivity extends Activity {
 	private Random		mRandom;
 	private int			mNumber;
 	private String[]	mMenu = {
-			"KimChiBokeumBob",
-			"BudeaGigea",
-			"Beef stake",
-			"Curry",
-			"Chinese food"	};
+			"김밥",
+			"김치볶음밥",
+			"김치찌게",
+			"닭도리탕",
+			"라면"	};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +34,8 @@ public class CookActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				mNumber=mRandom.nextInt(5);				
-				String str = "������ �޴��� ";				
-				str = str + mMenu[mNumber]+"�Դϴ�.";
+				String str = "오늘의 메뉴는 ";				
+				str = str + mMenu[mNumber]+"입니다.";
 				mTextView01.setText(str);
 			}
 		});

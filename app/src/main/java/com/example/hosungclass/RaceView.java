@@ -1,8 +1,6 @@
 package com.example.hosungclass;
 
 import java.util.Random;
-
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -35,7 +33,6 @@ public class RaceView extends View {
 	};	
 	
 	private Handler 	mHandler = new Handler() {
-		@SuppressLint("HandlerLeak")
 		@Override
 		public void handleMessage(Message msg) {
 			if (mWorking) {
@@ -44,7 +41,7 @@ public class RaceView extends View {
 					mDistance[i] = mDistance[i] + mRandom.nextInt(10);
 					if(mDistance[i] > mWidth/5*4) {
 						mWorking = false;
-						Toast.makeText(mContext, (i+1)+" finished", Toast.LENGTH_LONG).show();
+						Toast.makeText(mContext, (i+1)+"번째 마우스가 우승했습니다.", Toast.LENGTH_LONG).show();
 					}
 				}
 				invalidate();

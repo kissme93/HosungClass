@@ -44,9 +44,9 @@ public class DiceActivity extends Activity {
 				setDiceImage(mDiceNum1, mImageView01);
 				setDiceImage(mDiceNum2, mImageView02);
 				
-				String strText = "주사 "+mDiceNum1+" "+mDiceNum2+"\n"+(mDiceNum1+mDiceNum2)+"입니다.";
+				String strText = "첫번째 주사위는 "+mDiceNum1+"입니다.\n두번째 주사위는 "+mDiceNum2+"입니다.\n"+(mDiceNum1+mDiceNum2)+"칸 가세요.";
 				if (mDiceNum1==mDiceNum2) {
-					mTextView01.setText(strText+"같은 숫자입니다.");
+					mTextView01.setText(strText+"더블입니다.");
 				}else{
 					mTextView01.setText(strText);
 				}

@@ -22,7 +22,7 @@
 	        android:text="시작" />
 
 	</LinearLayout>
-	<com.example.hosung.SpeedNumberView
+	<com.example.hosungclass.SpeedNumberView
 	 	android:id="@+id/speedNumberView"
 	 	android:layout_width="match_parent"
 	    android:layout_height="wrap_content" />	    

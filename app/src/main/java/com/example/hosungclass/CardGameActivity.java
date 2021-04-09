@@ -124,12 +124,12 @@ public class CardGameActivity extends Activity {
 					mOpenCount --;
 				}				
 				if(mOpenCount%2 ==1) {
-					//one card
+					//홀수
 					mCardIndex=index;
 				}else{
-					//correct
+					//짝수
 					if (mCard[mCardIndex].mNumber==mCard[index].mNumber) {
-						Toast.makeText(mContext, "Corect", Toast.LENGTH_SHORT).show();
+						Toast.makeText(mContext, "정답입니다.", Toast.LENGTH_SHORT).show();
 				        if (mMediaPlayer != null) {
 				        	mMediaPlayer.release();
 				        	mMediaPlayer = null;
@@ -142,7 +142,7 @@ public class CardGameActivity extends Activity {
 				        }	
 						
 					}else{
-						Toast.makeText(mContext, "not correct.", Toast.LENGTH_SHORT).show();
+						Toast.makeText(mContext, "오답입니다.", Toast.LENGTH_SHORT).show();
 						mCardIndex2=index;
 						mFliping=true;
 						(new Handler()).postDelayed(new Runnable() {

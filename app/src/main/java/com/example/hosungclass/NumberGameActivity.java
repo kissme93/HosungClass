@@ -42,11 +42,11 @@ public class NumberGameActivity extends Activity {
 				CharSequence cs = mEditText01.getText();
 				int answer = Integer.parseInt(cs.toString());
 				if (answer<mNumber) {
-					mTextView02.setText(answer+" is smaller. try count : "+getScore(mCount));
+					mTextView02.setText(answer+"보다 큽니다. 점수:"+getScore(mCount));
 				}else if (answer>mNumber) {
-					mTextView02.setText(answer+"is bigger. try count : "+getScore(mCount));
+					mTextView02.setText(answer+"보다 작습니다. 점수:"+getScore(mCount));
 				}else if (answer==mNumber) {
-					mTextView02.setText("congratulation!!!! try count : "+getScore(mCount));
+					mTextView02.setText("정답입니다. 점수:"+getScore(mCount));
 				}
 				mEditText01.setText("");
 				mCount=mCount+1;

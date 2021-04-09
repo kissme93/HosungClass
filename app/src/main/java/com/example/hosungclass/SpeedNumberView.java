@@ -1,4 +1,4 @@
-package com.example.hosung;
+package com.example.hosungclass;
 
 import android.content.Context;
 import android.graphics.Canvas;

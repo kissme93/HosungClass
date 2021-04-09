@@ -14,24 +14,24 @@ import android.widget.Toast;
 public class MainActivity extends ListActivity {	
 	//private ListView mListView01;	
 	private String []mStringList= {
-			"Clock",
+			"시계",
 			"StopWatch",
 			"Timer",
 			"Lotto",
-			"NumberGame",
-			"Dice",
-			"Race",
-			"Mole",
-			"CardCame",
-			"NumberBaseBall",
-			"Cook",
-			"Drawing",
-			"Puzzle",
-			"Paint",
-			"Shape",
-			"Multiplication",
+			"숫자맞추기",
+			"주사위",
+			"경주", 
+			"두더지게임",
+			"카드게임",
+			"숫자야구",
+			"오늘의 메뉴",		
+			"그림 예제",
+			"퍼즐",
+			"그림판", 
+			"도형", 
+			"구구단",
 			"Matrix",
-			"SpeedNumber"
+			"숫자 빨리 터치하기"
 	};
 	
 	@Override

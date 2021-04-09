@@ -42,13 +42,13 @@ public class NumberBaseBallActivity extends Activity {
 			public void onClick(View v) {
 				String editText = mEditText01.getText().toString();
 				if(editText.length() !=3) {
-					Toast.makeText(getBaseContext(), "pleas input 3 number", Toast.LENGTH_LONG).show();
+					Toast.makeText(getBaseContext(), "3자리수를 입력하시오.", Toast.LENGTH_LONG).show();
 					return;					
 				}
 				mCount++;
 				String str=calculateBallCount(mStrBaseball, editText);
 				if (str.equals("3S0B")) {
-					mTextView01.setText("All Clear\n"+mCount+"Strike");
+					mTextView01.setText("정답입니다.\n"+mCount+"번만에 맞추셨습니다.");
 					
 				}else{
 					mTextView01.setText("result ="+str);
