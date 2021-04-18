@@ -40,7 +40,8 @@
         <activity android:name="com.example.hosungclass.MultiplicationTableActivity" />
         <activity android:name="com.example.hosungclass.MatrixActivity" />
         <activity android:name="com.example.hosungclass.SpeedNumberActivity" />
-        
+        <activity android:name="com.example.hosungclass.BingoActivity" />
+
         </application>
 
 </manifest>

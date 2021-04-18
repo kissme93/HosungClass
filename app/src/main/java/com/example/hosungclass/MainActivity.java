@@ -31,7 +31,8 @@ public class MainActivity extends ListActivity {
 			"도형", 
 			"구구단",
 			"Matrix",
-			"숫자 빨리 터치하기"
+			"숫자 빨리 터치하기",
+			"빙고",
 	};
 	
 	@Override
@@ -111,10 +112,13 @@ public class MainActivity extends ListActivity {
 			startActivity(intent);				
 		} else if (strItem.equals(mStringList[nIndex++])) {
 			Intent intent = new Intent(MainActivity.this, MatrixActivity.class);
-			startActivity(intent);				
+			startActivity(intent);
 		} else if (strItem.equals(mStringList[nIndex++])) {
 			Intent intent = new Intent(MainActivity.this, SpeedNumberActivity.class);
-			startActivity(intent);				
+			startActivity(intent);
+		} else if (strItem.equals(mStringList[nIndex++])) {
+			Intent intent = new Intent(MainActivity.this, BingoActivity.class);
+			startActivity(intent);
 		}
 		
 		super.onListItemClick(l, v, position, id);
